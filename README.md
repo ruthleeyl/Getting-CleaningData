@@ -24,6 +24,6 @@ The dataset is also sorted according to SubjectID, followed by ActivityID.
 
 The dataset is arranged by SubjectID, followed by Activity.
 
-The dataset is then exported as a csv file, using write.csv. I find that a csv file is more readable for datasets and hence decided against exporting it as a text file.
+The dataset is then exported as a txt file, using write.table, according to the Assignment Instructions. However, I find that a csv file is more readable for datasets and it can be done so easily using write.csv.
 
 Before I conclude, I must say that this Assignment is a good exercise to apply what we have learnt from this Course.
