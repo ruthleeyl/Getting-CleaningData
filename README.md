@@ -20,7 +20,7 @@ The dataset is also sorted according to SubjectID, followed by ActivityID.
 
 (4) "Gsub" function is used to replace the acronyms with descriptives. There is an alternative method of using multigsub in the qdap package to make multiple replacements. I have highlighted an example for reference.
 
-(5) "Aggregate" function is used to create a dataset with the average of each variable for each Subject and Activity.
+(5) "Aggregate" function is used to create a dataset with the average of each variable for each Subject and Activity. Before doing so, checks were done to ensure that there are no NA/infinity values in the dataset.
 
 The dataset is arranged by SubjectID, followed by Activity.
 
