@@ -2,7 +2,7 @@
 Title: "Codebook for Assignment 4"
 Author: "Ruth Lee"
 Date: "11 June 2017"
-output:tidydata.csv
+output:tidydata.txt
 ---
 
 ## Project Description
@@ -47,7 +47,7 @@ The Training and Test data sets are merged and labeled by their descriptive vari
 As there are no NA/Infinity values, I proceed to find the average of each variable for each subject and each activity. 
 Please refer to README.md for greater detail in the data clearning processs. 
 
-(E) Description of the variables in the tidydata.csv file
+(E) Description of the variables in the tidydata.txt file
 
 (1) Dimensions:
 (a)There are 180 observations (30 Subjects for each of the 6 Activities) 
