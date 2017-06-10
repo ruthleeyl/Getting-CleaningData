@@ -1,22 +1,22 @@
-#Code Book
 --
 Title: "Codebook for Assignment 4"
 Author: "Ruth Lee"
 Date: "11 June 2017"
-output:dataset.csv
+output:tidydata.csv
 ---
 
 ## Project Description
 To create a tidy dataset for subsequent analysis
 
-##Study design and data processing
+(A) Study design and data processing
 
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. 
 Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. 
 Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. 
 The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
 
-###Collection of the raw data
+(B) Collection of the raw data
+
 The time domain raw signals from the accelerometer and gyroscope in 3-axial raw signals in the X, Y and Z directions were captured at a constant rate of 50 Hz. 
 Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. 
 Similarly, the acceleration signal was then separated into body and gravity acceleration signals using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
@@ -27,23 +27,28 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals. The
 
 The set of variables that were estimated from these signals are: 
 
-##Creating the tidy datafile
+(C) Creating the tidy datafile
 
-###Guide to create the tidy data file
+(i) Guide to create the tidy data file
+
 Description on how to create the tidy data file:
-Goal: Tidy data
+
+Ensure that:
 1.	Each variable forms a column
 2.	Each observation forms a row
 3.	Each table/file stores data about one kind of observation
 
 
-###Cleaning of the data
+(D) Cleaning of the data
+
 Checks were done to ensure that each variable forms a column, each observation forms a row and that each table stores data about one kind observation. 
+
 The Training and Test data sets are merged and labeled by their descriptive variable names, and each observation is labeled by its respective Subject ID (1 to 30) for each Activity (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING). 
 As there are no NA/Infinity values, I proceed to find the average of each variable for each subject and each activity. 
 Please refer to README.md for greater detail in the data clearning processs. 
 
-##Description of the variables in the tidydata.csv file
+(E) Description of the variables in the tidydata.csv file
+
 (1) Dimensions:
 (a)There are 180 observations (30 Subjects for each of the 6 Activities) 
 (b)There are 81 columns: SubjectID , ActivityID and the 79 mean and standard deviation variables with details as follows:
@@ -131,5 +136,6 @@ Please refer to README.md for greater detail in the data clearning processs.
 [81] "frequencydomainBodyGyroscopeJerkSignalsMagnitude_meanFreq()" - mean frequency of the magnitude frequency domain body gyroscope                                                                          jerk signals   
 
 ##Sources
+
 Full description of the raw dataset:
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
