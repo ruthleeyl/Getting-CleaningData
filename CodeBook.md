@@ -51,7 +51,7 @@ Please refer to README.md for greater detail in the data clearning processs.
 
 (1) Dimensions:
 (a)There are 180 observations (30 Subjects for each of the 6 Activities) 
-(b)There are 81 columns: SubjectID , ActivityID and the 79 mean and standard deviation variables with details as follows:
+(b)There are 81 columns: SubjectID (integer) , ActivityID (factor) and the 79 mean and standard deviation variables (all are numbers) with details as follows:
 
  [1] "SubjectID"   -1 to 30, representing each of the 30 volunteers                                                   
  [2] "ActivityID"  -WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING                                            
